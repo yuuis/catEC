@@ -15,7 +15,9 @@ Route::get('/', function () {
     return view('top');
 });
 
-Route::resource("products", "PostController", ["only" => ["create", "store", "show"]]);
+Route::resource("products", "ProductController", ["only" => ["create", "store", "show", "index"]]);
+
+Route::resource("purchase", "PurchaseController", ["only" => ["create", "store", "show", "index"]]);
 
 Route::get("/login", ["as" => "login", "uses" => "SessionController@create"]);
 Route::post("/login", "SessionController@store");
