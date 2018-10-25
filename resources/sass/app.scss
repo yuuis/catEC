@@ -153,3 +153,24 @@ html, body {
   height: 50px;
   weight: 200px;
 }
+
+.top-button {
+  height: 50px;
+  weight: 200px;
+}
+
+.top-buttons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.products {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.product {
+  margin-top: 10%;
+  text-align: center;
+}

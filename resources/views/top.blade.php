@@ -6,8 +6,10 @@
             <div class="title m-b-md">
                 Cat EC
             </div>
-            <a href="{{ url('/products') }}"><button class="btn btn-primary top-button">ねこ商品一覧</button></a>
-            <a href="{{ url('/login') }}"><button class="btn btn-primary top-button">管理</button></a>
+            <div class="top-buttons">
+                <a href="{{ url('/products') }}"><button class="btn btn-primary top-button">ねこ商品一覧</button></a>
+                <a href="{{ url('/login') }}"><button class="btn btn-primary top-button">管理</button></a>
+            </div>
         </div>
     </div>
     <style>
