@@ -13,9 +13,27 @@ class ProductSeeder extends Seeder
     {
         DB::table("products")->insert ([
             "name" => "キャットタワー",
-            "price" => 1200,
-            "image" => "01.png",
-            "description" => "5mのキャットタワーです",
+            "price" => 12000,
+            "image" => "01.jpg",
+            "description" => "1.5mのキャットタワーです",
+        ]);
+        DB::table("products")->insert ([
+            "name" => "キャットタワー",
+            "price" => 12000,
+            "image" => "01.jpg",
+            "description" => "1.5mのキャットタワーです",
+        ]);
+        DB::table("products")->insert ([
+            "name" => "キャットタワー",
+            "price" => 12000,
+            "image" => "01.jpg",
+            "description" => "1.5mのキャットタワーです",
+        ]);
+        DB::table("products")->insert ([
+            "name" => "キャットタワー",
+            "price" => 12000,
+            "image" => "01.jpg",
+            "description" => "1.5mのキャットタワーです",
         ]);
     }
 }
