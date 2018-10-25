@@ -12,5 +12,11 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('top');
 });
+
+Route::resource("products", "PostController", ["only" => ["create", "store"]]);
+
+Route::get("/login", ["as" => "login", "uses" => "SessionController@create"]);
+Route::post("/login", "SessionController@store");
+Route::get("/logout", ["as" => "logout", "uses" => "SessionController@destroy"]);
