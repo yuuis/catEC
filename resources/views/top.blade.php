@@ -6,8 +6,8 @@
             <div class="title m-b-md">
                 Cat EC
             </div>
-            <button class="btn btn-primary">ねこ商品一覧</button>
-            <button class="btn btn-primary">管理</button>
+            <a href="url('/posts')"><button class="btn btn-primary top-button">ねこ商品一覧</button></a>
+            <button class="btn btn-primary top-button">管理</button>
         </div>
     </div>
     <style>
