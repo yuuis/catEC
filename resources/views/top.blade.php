@@ -6,19 +6,11 @@
             <div class="title m-b-md">
                 Cat EC
             </div>
-            <a href="url('/posts')"><button class="btn btn-primary top-button">ねこ商品一覧</button></a>
-            <button class="btn btn-primary top-button">管理</button>
+            <a href="{{ url('/products') }}"><button class="btn btn-primary top-button">ねこ商品一覧</button></a>
+            <a href="{{ url('/login') }}"><button class="btn btn-primary top-button">管理</button></a>
         </div>
     </div>
     <style>
-        html, body {
-            background-color: #fff;
-            color: #636b6f;
-            font-family: 'Nunito', sans-serif;
-            font-weight: 200;
-            height: 100vh;
-            margin: 0;
-        }
 
         .full-height {
             height: 100vh;

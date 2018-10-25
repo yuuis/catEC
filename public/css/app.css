@@ -10480,6 +10480,9 @@ body {
   font-weight: 200;
   height: 100vh;
   margin: 0;
+  background-image: url(/images/back-299.png?d6de7348be0e44129de1882970cf0bb4);
+  background-repeat: repeat;
+  background-attachment: fixed;
 }
 
 .full-height {
@@ -10518,5 +10521,125 @@ body {
 
 .m-b-md {
   margin-bottom: 30px;
+}
+
+.card-img-top {
+  width: 400px;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.product-title {
+  padding: 0.25em 0.5em;
+  color: #494949;
+  background: transparent;
+  border-left: solid 5px #7db4e6;
+  margin-bottom: 5%;
+}
+
+.full-height {
+  height: 100vh;
+}
+
+.flex-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.position-ref {
+  position: relative;
+}
+
+.top-right {
+  position: absolute;
+  right: 10px;
+  top: 18px;
+}
+
+.content {
+  text-align: center;
+}
+
+.title {
+  font-size: 84px;
+}
+
+.m-b-md {
+  margin-bottom: 30px;
+}
+
+.product-title {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  padding: 0.25em 0.5em;
+  color: #494949;
+  background: transparent;
+  border-left: solid 5px #7db4e6;
+}
+
+.product-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+@media only screen and (max-width: 1100px) {
+  .product-info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .product-img {
+    text-align: center;
+  }
+
+  .border-light {
+    width: 70%;
+  }
+}
+
+.border-light {
+  width: 500px;
+}
+
+.card-title {
+  margin-bottom: 5%;
+}
+
+.product-basic-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  margin-top: 10%;
+}
+
+.btn-warning {
+  width: 30%;
+}
+
+.product-purchase {
+  height: 50px;
+  weight: 200px;
 }
 
