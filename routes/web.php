@@ -11,13 +11,13 @@
 |
 */
 
-Route::get('/', function () {
-    return view('top');
-});
+Route::get('/', ["as" => "root", "uses" => function () { return view('top'); }]);
 
 Route::resource("products", "ProductController", ["only" => ["create", "store", "show", "index"]]);
 
-Route::resource("purchase", "PurchaseController", ["only" => ["create", "store", "show", "index"]]);
+Route::resource("purchase", "PurchaseController", ["only" => ["store", "show", "index"]]);
+
+Route::get("/purchase/create/{productId}", ["as" => "purchase.create", "uses" => "PurchaseController@create"]);
 
 Route::get("/login", ["as" => "login", "uses" => "SessionController@create"]);
 Route::post("/login", "SessionController@store");
