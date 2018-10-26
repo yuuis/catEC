@@ -10671,7 +10671,35 @@ body {
   text-align: center;
 }
 
-.card-footer {
-  text-decoration: none;
+.form-item {
+  margin-top: 10%;
+}
+
+.input-user-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.purchase-info {
+  width: 800px;
+}
+
+@media only screen and (max-width: 1100px) {
+  .purchase-info {
+    width: 500px;
+  }
+}
+
+.success-purchase {
+  text-align: center;
+}
+
+.success-purchase-message {
+  font-size: 30px;
 }
 

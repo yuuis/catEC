@@ -174,3 +174,32 @@ html, body {
   margin-top: 10%;
   text-align: center;
 }
+
+.form-item {
+  margin-top: 10%;
+}
+
+.input-user-info {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.purchase-info {
+  width: 800px;
+}
+
+@media only screen and (max-width: 1100px) {
+  .purchase-info {
+    width: 500px;
+  }
+}
+
+.success-purchase {
+  text-align: center;
+  // margin-top: 20%;
+}
+
+.success-purchase-message {
+  font-size: 30px;
+}

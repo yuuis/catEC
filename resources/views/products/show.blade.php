@@ -13,7 +13,7 @@
           <h4 class="card-title">{{ $product->name }}</h4>
           <p class="card-text product-price">{{ $product->description }}</p>
           <p class="card-text alert alert-primary" style="font-size: 20px"><span class="badge badge-primary" style="font-size: 15px">価格</span>: <b>{{ $product->price }}円</b></p>
-          <button class="btn btn-warning product-purchase"><b>購入する</b></button>
+          <a href="{{ url(('purchase/create/' . $product->id)) }}"><button class="btn btn-warning product-purchase"><b>購入する</b></button></a>
         </div>
       </div>
     </div>
