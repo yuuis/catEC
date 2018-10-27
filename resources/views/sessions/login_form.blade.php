@@ -6,6 +6,9 @@
       <div class="card-header">管理画面にログイン</div>
       <div class="card-body">
         <h4 class="card-title">パスワードを入力</h4>
+        @if(Session::has('alert'))
+          <div class="alert alert-danger" role="alert">{{ Session::get('alert') }}</div>
+        @endif
         <form action="{{ url('login') }}" method="post">
           {{ csrf_field() }}
           <div class="form-group" style="text-align: center">
