@@ -11,7 +11,7 @@ class AdministratorSeeder extends Seeder
      */
     public function run()
     {
-        DB::table("administrator")->insert ([
+        DB::table("administrators")->insert ([
             "password" => hash("sha512", hash("sha512", "hogefugapiyo"))
         ]);
     }
