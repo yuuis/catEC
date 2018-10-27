@@ -13,7 +13,7 @@ class CreateAdministratorTable extends Migration
      */
     public function up()
     {
-        Schema::create('administrator', function (Blueprint $table) {
+        Schema::create('administrators', function (Blueprint $table) {
             $table->increments('id');
             $table->string('password');
             $table->timestamps();
