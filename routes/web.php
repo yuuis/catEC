@@ -19,6 +19,9 @@ Route::resource("purchase", "PurchaseController", ["only" => ["store", "show", "
 
 Route::get("/purchase/create/{productId}", ["as" => "purchase.create", "uses" => "PurchaseController@create"]);
 
+Route::get("/admin/products", ["as" => "admin.products", "uses" => "AdminController@productsIndex"]);
+Route::get("/admin/purchases", ["as" => "admin.purchases", "uses" => "AdminController@purchasesIndex"]);
+
 Route::get("/login", ["as" => "login", "uses" => "SessionController@create"]);
 Route::post("/login", "SessionController@store");
 Route::get("/logout", ["as" => "logout", "uses" => "SessionController@destroy"]);
