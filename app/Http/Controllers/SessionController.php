@@ -11,8 +11,8 @@ class SessionController extends Controller
         return view("sessions.login_form");
     }
 
-    public function store() {
-        $administrator = Administraot::where("password", hash("sha512", hash("sha512", $request->input("password"))))->first();
+    public function store(Request $request) {
+        $administrator = Administrator::where("password", hash("sha512", hash("sha512", $request->input("password"))))->first();
         if ($administrator) {
             session(["login" => true]);
             $notice = "ログインが完了しました";
