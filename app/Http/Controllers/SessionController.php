@@ -18,12 +18,12 @@ class SessionController extends Controller
             $notice = "ログインが完了しました";
             return view("admin.index", compact($notice));
         } else {
-            $alert = "ログインに失敗しました";
+            $alert = "パスワードが間違っています";
             return back()->with("alert", $alert);
         }
     }
 
-    public function destory() {
+    public function destroy() {
         session(["login" => false]);
         $notice = "ログアウトしました";
         return redirect()->route("root")->with("notice", $notice);

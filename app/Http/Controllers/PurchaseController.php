@@ -42,7 +42,6 @@ class PurchaseController extends Controller
         $validator = Validator::make($inputs, $rules, $messages);
         
         if ($validator->fails()) {
-            // dd($validator);
             return redirect()->back()->withErrors($validator)->withInput();
         } else {
             $user = new User();
