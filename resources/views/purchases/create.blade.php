@@ -53,7 +53,7 @@
           @endif
         </div>
         <button type="submit" class="btn btn-warning product-purchase"><b>購入する</b></button>
-        <p style="color: red">支払い方法は代金引換のみです。</p>
+        <p style="color: red; margin-top: 4%;">支払い方法は代金引換のみです。</p>
     </form>
     </div>
   </div>
