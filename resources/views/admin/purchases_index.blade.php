@@ -28,21 +28,21 @@
           @foreach ($purchases as $purchase)
             <tr>
               <td>
-                {{ $purchase[0]->id }}
+                {{ $purchase->user->id }}
               </td>
               <td>
-                {{ $purchase[0]->name }}
+                {{ $purchase->user->name }}
               </td>
               <td>
-                {{ $purchase[0]->email }}
+                {{ $purchase->user->email }}
               <td>
-                {{ $purchase[0]->phone_number }}
+                {{ $purchase->user->phone_number }}
               </td>
               <td>
-                {{ $purchase[0]->address }}
+                {{ $purchase->user->address }}
               </td>
               <td>
-                {{ $purchase[1]->name }}
+                {{ $purchase->product->name }}
               </td>
             </tr>
           @endforeach

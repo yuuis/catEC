@@ -15,7 +15,7 @@ class AdminController extends Controller
     }
 
     public function purchasesIndex() {
-        $purchases = Purchase::allTupled();
+        $purchases = Purchase::all();
         return view("admin.purchases_index", compact("purchases"));
     }
 }
