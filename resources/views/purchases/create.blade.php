@@ -11,7 +11,7 @@
         <p class="card-text alert alert-primary" style="font-size: 20px"><span class="badge badge-primary" style="font-size: 15px">価格</span>: <b>{{ $product->price }}円</b></p>
       </div>
 
-      <form action="{{ url(('purchase')) }}" method="post">
+      <form action="{{ url('purchase') }}" method="post">
         {{ csrf_field() }}
         <input type="hidden" name="productId" value="{{ $product->id }}">
         <div class="form-row">
