@@ -4,7 +4,7 @@
   <div class="products">
     @foreach($products as $product)
       <a href="products/{{$product->id}}" style="text-decoration: none;">
-        <div class="card product" style="width: 20rem;">
+        <div class="card product" style="width: 30rem; height: 35rem">
           <img class="card-img-top" src="images/products/{{ $product->image }}" alt="image of {{$product->name}}">
           <div class="card-body">
             <p>{{ $product->name }}</p>
