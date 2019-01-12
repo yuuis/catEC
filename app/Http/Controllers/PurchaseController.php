@@ -32,11 +32,11 @@ class PurchaseController extends Controller
             "inputAddress" => "required|max:300",
         ];
         $messages = [
-            "inputName.required" => "名前を入力してください",
-            "inputEmail.required" => "メールアドレスを入力してください",
-            "inputEmail.email" => "メールアドレスを正しく入力してください",
-            "inputPhoneNumber.required" => "電話番号を入力してください",
-            "inputAddress.required" => "住所をしてください",
+            "inputName.required" => "name is required.",
+            "inputEmail.required" => "email address is required.",
+            "inputEmail.email" => "email format is wrong.",
+            "inputPhoneNumber.required" => "phone number is required.",
+            "inputAddress.required" => "address is required.",
         ];
 
         $validator = Validator::make($inputs, $rules, $messages);
