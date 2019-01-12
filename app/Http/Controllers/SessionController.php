@@ -15,17 +15,17 @@ class SessionController extends Controller
         $administrator = Administrator::where("password", hash("sha512", hash("sha512", $request->input("password"))))->first();
         if ($administrator) {
             session(["login" => true]);
-            $notice = "ログインが完了しました";
+            $notice = "login successful!";
             return view("admin.index", compact($notice));
         } else {
-            $alert = "パスワードが間違っています";
+            $alert = "wrong password inputed.";
             return back()->with("alert", $alert);
         }
     }
 
     public function destroy() {
         session(["login" => false]);
-        $notice = "ログアウトしました";
+        $notice = "logout successful!";
         return redirect()->route("root")->with("notice", $notice);
     }
 }
