@@ -19,7 +19,7 @@ $ php artisan serve
     * name
     * email
     * phone number
-    * address    
+    * address
   * `administrator`
     * password
   * `purchase`
